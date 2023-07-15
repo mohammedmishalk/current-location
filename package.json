@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mohammedmishalk/geo-finder.git"
+    "url": "git+https://github.com/mohammedmishalk/current-location.git"
   },
   "keywords": [
     "geolocation",

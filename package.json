@@ -1,0 +1,31 @@
+{
+  "name": "current-location",
+  "version": "1.0.0",
+  "description": "geo-finder is a simple and easy-to-use NPM package that helps you find your current location",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mohammedmishalk/geo-finder.git"
+  },
+  "keywords": [
+    "geolocation",
+    "currentloction",
+    "imageloctiontag",
+    "tagloctiononimage",
+    "where",
+    "am",
+    "i",
+    "getmaploction",
+    "maps",
+    "tracking"
+  ],
+  "author": "Mohammed-Mishal-K",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mohammedmishalk/geo-finder/issues"
+  },
+  "homepage": "https://github.com/mohammedmishalk/geo-finder#readme"
+}

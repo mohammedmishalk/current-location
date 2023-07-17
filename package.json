@@ -1,6 +1,6 @@
 {
   "name": "current-location-geo",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "geo-finder is a simple and easy-to-use NPM package that helps you find your current location",
   "main": "index.js",
   "scripts": {

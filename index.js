@@ -1,9 +1,25 @@
-function getCurrentLocation(callback) {
+function getLocation(callback) {
   if (navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(
-      function (position) {
+      async function (position) {
         const { latitude, longitude } = position.coords;
-        callback(null, { latitude, longitude });
+        try {
+          const url = `https://nominatim.openstreetmap.org/reverse?format=json&lat=${latitude}&lon=${longitude}`;
+          const response = await fetch(url);
+          const data = await response.json();
+
+          if (data) {
+            const address = data.display_name;
+            console.log(address);
+            callback(null, { latitude, longitude, address });
+          } else {
+            console.log('No results found');
+            callback(null, { latitude, longitude, address: null });
+          }
+        } catch (error) {
+          console.error('Error:', error);
+          callback(error);
+        }
       },
       function (error) {
         callback(error);
@@ -14,6 +30,10 @@ function getCurrentLocation(callback) {
   }
 }
 
+
+
+
 module.exports = {
-  getCurrentLocation
+  getLocation,
+
 };

@@ -6,8 +6,9 @@ A package for retrieving the current geolocation and address information.
 
 ## Features
 
-- To get Current-location the User
-- You Can Tag that with Images
+- To get Current-location Of the  User
+- You Can Tag location  with Images
+- You Can Get Longitude & Latitude
 
 
 
